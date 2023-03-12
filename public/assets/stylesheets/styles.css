@@ -7,7 +7,10 @@
 .bg-custom-blue-2{
     background-color: #3E64FF;
 }
-
+.bg-custom-gray{
+    background-color: #ECE9EC;
+    border: 0.4px solid #F89AEE;
+}
 .text-custom-grey{
     color: #555353;
 }
@@ -33,7 +36,7 @@
     height: 65px;
     margin-left: 25%;
     margin-right: 25%;
-    background: #F3F3F3;
+    background-color: #F3F3F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
 }
@@ -83,6 +86,42 @@
 .doctor{
     width: 50%;
     height: 100%;
+}
+.custom-btn{
+    width: 100%;
+    height: 50px;
+    background-color: #51A8FF;
+    box-shadow: 0px 2px 1px rgba(142, 139, 139, 0.12);
+    border-radius: 15px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+.custom-field{
+    background: #F3F3F3;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.12);
+    border-radius: 15px;
+}
+.gr-1{
+    width: 25%;
+    height: 5px;
+    background: linear-gradient(269.97deg, #51A8FF 4.18%, rgba(196, 196, 196, 0) 77.28%);
+}
+.gr-2{
+    width: 25%;
+    height: 5px;
+    background: linear-gradient(269.97deg, #51A8FF 4.18%, rgba(196, 196, 196, 0) 77.28%);
+    transform: rotate(-180deg);
+}
+.w-50{
+    width: 50%;
+}
+.rounded-full{
+    padding: 10px;
+    border-radius: 100%;
+    overflow: hidden;
 }
 
 /* tablet */
