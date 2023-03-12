@@ -7,16 +7,22 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'TrustyMed') }}</title>
+    <title>TrustyMed</title>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
+    {{-- Bootstrap --}}
+    <link rel="stylesheet" href="{{asset('assets/stylesheets/bootstrap.css')}}">
+    <script src="{{asset('assets/scripts/bootstrap.js')}}"></script>
+
+    {{-- Custom Stylesheets --}}
+    <link rel="stylesheet" href="{{asset('assets/stylesheets/styles.css')}}">
 </head>
 <body>
-    <div id="app">
-        <main class="py-4">
+    <div id="app" class="bg-custom-white">
+        <main>
             @yield('content')
         </main>
     </div>
