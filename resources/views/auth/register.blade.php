@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container-fluid py-5 px-2">
+    <div class="container-fluid py-5 px-2 h-screen">
         <div class="row justify-content-center mx-4">
             <div class="col-6 text-center my-4">
                 <img src="{{asset('assets/images/image1.png')}}" alt="">

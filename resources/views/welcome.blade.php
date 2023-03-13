@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container-fluid m-0 p-0">
+    <div class="container-fluid m-0 p-0 h-screen">
         <div class="hero-area bg-custom-blue pt-3">
             <h1 class="headline text-white py-2">Trusty Med</h1>
             <div class="row bg-custom-blue">

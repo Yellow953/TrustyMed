@@ -1,8 +1,22 @@
-* Install Dependecies
-    composer install
+* Trusty Med
 
-* Run the project
-    php artisan serve
+* requirements
+    * php
+    * mysql
+    * laravel
 
-* Database migration 
-    php artisan migrate:fresh --seed    
+* install 
+    * composer install
+
+* database configuration
+    * create mysql database called "TrustyMed"
+    * add it to .env file
+    * DB_DATABASE=TrustyMed
+    * DB_USERNAME=root
+    * DB_PASSWORD=
+
+* migrate
+    * php artisan migrate:fresh --seed
+
+* run
+    * php artisan serve

@@ -23,6 +23,7 @@
 <body>
     <div id="app" class="bg-custom-white">
         <main>
+            @include('layouts.flash')
             @yield('content')
         </main>
     </div>
