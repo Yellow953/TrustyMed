@@ -4,16 +4,12 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class DoctorsController extends Controller{
+class AppointmentsController extends Controller{
     public function __construct(){
         $this->middleware('auth');
     }
 
     public function index(){
-        return view('doctors.index');
-    }
-
-    public function show(){
-        return view('doctors.show');
+        return view('appointments.index');
     }
 }

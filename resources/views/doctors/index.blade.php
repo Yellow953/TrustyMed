@@ -65,7 +65,33 @@
                         </div>
                     </div>
                 </div>
-            </div>            
+            </div>
+            
+            <div class="card doctor-card m-2 my-4">
+                <div class="doctor">
+                    <div class="row">
+                        <div class="col-4 col-md-3">
+                            <div class="doctor-container w-100 d-flex justify-content-center">
+                                <img src="{{asset('assets/images/doctor2.png')}}" alt="" class="doctor-image img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-9">
+                            <div class="m-1 m-md-3">
+                                <h5 class="doctor-name">Dr. Jenny Wilson</h5>
+                                <div class="doctor-speciality">
+                                    Dental Surgeon
+                                </div>
+                                <div class="rating">
+                                    <img src="{{asset('assets/images/star.png')}}" alt="" class="star">5
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+    <br><br><br>
+    @include('layouts.nav')
 @endsection
