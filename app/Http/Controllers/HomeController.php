@@ -8,4 +8,9 @@ class HomeController extends Controller{
     public function index(){
         return view('welcome');
     }
+
+    public function test(){
+        $test_var = 'test variable';
+        return view('test');
+    }
 }

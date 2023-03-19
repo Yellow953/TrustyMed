@@ -20,7 +20,7 @@
                 </select>
             </div>
             <div class="d-flex justify-content-around w-100 overflow-x-scroll">
-                <div class="day-card text-center day-active">
+                <div class="day-card text-center {{($doctor->appointment->day == 13)? "day-active" : "" }}">
                     <div class="day-num text-white">13</div>
                     <div class="day-str text-white">MON</div>
                 </div>

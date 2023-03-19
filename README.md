@@ -16,8 +16,8 @@
     * DB_PASSWORD=
 
 * migrate
-    * php artisan migrate:fresh --seed
     * php artisan key:generate
+    * php artisan migrate:fresh --seed
 
 * run
     * php artisan serve
