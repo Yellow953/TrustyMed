@@ -48,6 +48,12 @@
                 <div class="col-md-4 offset-md-4 my-4">
                     <button type="submit" class="custom-btn">Create Account</button>
                 </div>
+                <br>
+                <div class="col-md-6 offset-md-3 d-flex">
+                    <span class="gr-1 my-auto"></span>
+                    <span class="w-50 text-center"><a href="/login" class="nav-link">Or Login</a></span>
+                    <span class="gr-2 my-auto"></span>
+                </div>
             </form>    
         </div>
     </div>

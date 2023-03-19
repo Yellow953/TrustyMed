@@ -4,7 +4,9 @@
     <div class="container-fluid m-0 p-0 h-screen">
         <div class="d-flex justify-content-between p-5">
             <div class="back-container">
-                <img src="{{asset('assets/images/left_arrow.png')}}" alt="" class="back m-2">
+                <a href="/doctor/1">
+                    <img src="{{asset('assets/images/left_arrow.png')}}" alt="" class="back m-2">
+                </a>
             </div>
             <h3>Book Appointment</h3>
             <div></div>
@@ -20,7 +22,7 @@
                 </select>
             </div>
             <div class="d-flex justify-content-around w-100 overflow-x-scroll">
-                <div class="day-card text-center {{($doctor->appointment->day == 13)? "day-active" : "" }}">
+                <div class="day-card text-center day-active">
                     <div class="day-num text-white">13</div>
                     <div class="day-str text-white">MON</div>
                 </div>

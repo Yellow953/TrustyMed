@@ -4,7 +4,9 @@
     <div class="container-fluid m-0 p-0 h-screen">
         <div class="d-flex justify-content-between p-5">
             <div class="back-container">
-                <img src="{{asset('assets/images/left_arrow.png')}}" alt="" class="back m-2">
+                <a href="/doctors">
+                    <img src="{{asset('assets/images/left_arrow.png')}}" alt="" class="back m-2">
+                </a>
             </div>
             <h3>Doctor Details</h3>
             <div></div>
@@ -36,7 +38,7 @@
                 <p class="details-p">Dr Jenny Wilson (implantionist), is a dentist in america. She was 20 when she finished college ...</p>
             
                 <h4 class="details-h4 mt-4">Specialities</h4>
-                <div class="d-flex w-auto overflow-x-scroll">
+                <div class="d-flex w-auto overflow-x-auto">
                     <div class="speciality-card m-2 mx-3">
                         Dental Surgeon
                     </div>
@@ -56,7 +58,7 @@
         </div>
 
         <div class="text-center my-5">
-            <a href="" class="btn-custom">Book Appointment</a>
+            <a href="/appointments/doctor/1" class="btn-custom">Book Appointment</a>
         </div>
     </div>
 

@@ -18,10 +18,17 @@
                 <p class="call-to-action mx-2 my-5">
                     Get to know your doctors and book your appointment online
                 </p>
-                <div class="rectangle-1 d-flex">
-                    <div class="login py-3"><a href="/login">Sign In</a></div>
-                    <div class="register py-3"><a href="/register">Register</a></div>
-                </div>
+                @if (Auth::check())     
+                    <div class="rectangle-1 d-flex">
+                        <div class="login py-3"><a href="/doctors">Doctors</a></div>
+                        <div class="register py-3"><a href="/logout">Logout</a></div>
+                    </div>
+                @else
+                    <div class="rectangle-1 d-flex">
+                        <div class="login py-3"><a href="/login">Sign In</a></div>
+                        <div class="register py-3"><a href="/register">Register</a></div>
+                    </div>
+                @endif
             </div>
         </div>
     </div>
