@@ -21,16 +21,8 @@
             </form>
             <div class="d-flex">
                 <span class="gr-1 my-auto"></span>
-                <span class="w-50 text-center">Or Sign Up</span>
+                <span class="w-50 text-center"><a href="/register" class="nav-link">Or Sign Up</a></span>
                 <span class="gr-2 my-auto"></span>
-            </div>
-            <div class="d-flex justify-content-center my-3">
-                <div class="rounded bg-custom-gray mx-2 px-3 py-2">
-                    <a href="/doctor/new" class="nav-link">Doctor</a>
-                </div>
-                <div class="rounded bg-custom-gray mx-2 px-3 py-2">
-                    <a href="/register" class="nav-link">Patient</a>
-                </div>
             </div>
         </div>
     </div>
