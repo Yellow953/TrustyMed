@@ -16,17 +16,21 @@
             <div class="row">
                 <div class="col-4 col-md-3">
                     <div class="doctor-container w-100 d-flex justify-content-center">
-                        <img src="{{asset('assets/images/doctor2.png')}}" alt="" class="doctor-image img-fluid">
+                        @if($doctor->image)
+                            <img src="{{asset($doctor->image)}}" alt="" class="doctor-image img-fluid">
+                        @else
+                            <img src="{{asset('assets/images/doctor1.png')}}" alt="" class="doctor-image img-fluid">
+                        @endif
                     </div>
                 </div>
                 <div class="col-4 col-md-9">
                     <div class="m-1 m-md-3">
-                        <h5 class="doctor-name">Dr. Jenny Wilson</h5>
+                        <h5 class="doctor-name">Dr. {{$doctor->name}}</h5>
                         <div class="doctor-speciality">
-                            Dental Surgeon
+                            {{$doctor->speciality->name}}
                         </div>
-                        <div class="rating">
-                            <img src="{{asset('assets/images/star.png')}}" alt="" class="star">5
+                        <div class="rating text-black">
+                            <img src="{{asset('assets/images/Star.png')}}" alt="" class="star">{{$doctor->rating}}
                         </div>
                     </div>
                 </div>
@@ -35,18 +39,12 @@
 
             <div class="details">
                 <h4 class="details-h4 mt-4">Biography</h4>
-                <p class="details-p">Dr Jenny Wilson (implantionist), is a dentist in america. She was 20 when she finished college ...</p>
+                <p class="details-p">{{$doctor->bio}}</p>
             
                 <h4 class="details-h4 mt-4">Specialities</h4>
                 <div class="d-flex w-auto overflow-x-auto">
                     <div class="speciality-card m-2 mx-3">
-                        Dental Surgeon
-                    </div>
-                    <div class="speciality-card m-2 mx-3">
-                        Dentist
-                    </div>
-                    <div class="speciality-card m-2 mx-3">
-                        Doctor
+                        {{$doctor->speciality->name}}
                     </div>
                 </div>
                 
@@ -58,7 +56,7 @@
         </div>
 
         <div class="text-center my-5">
-            <a href="/appointments/doctor/1" class="btn-custom">Book Appointment</a>
+            <a href="/appointments/doctor/{{$doctor->id}}" class="btn-custom">Book Appointment</a>
         </div>
     </div>
 
