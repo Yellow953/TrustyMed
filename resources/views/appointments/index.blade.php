@@ -15,33 +15,49 @@
         <div class="doctor-details">
             <h2 class="date mt-3">Date</h2>
             <div class="month my-3">
-                <select name="month" class="month-input">
-                    <option value="">February, 2023</option>
-                    <option value="">March, 2023</option>
-                    <option value="">April, 2023</option>
-                </select>
+                <form action="/appointments/doctor/{{$doctor->id}}" method="get"></form>
+                    @csrf
+                    <select name="search" class="month-input">
+                        @foreach ($months as $index=>$month )
+                            <option value="{{$index+1}}" {{$month == $current_month ? 'selected' : ''}}>{{$month}}</option>
+                        @endforeach
+                    </select>
+                    <button type="submit" class="btn">
+                        <img src="{{asset('assets/images/Search.png')}}" alt="" class="icon-2">
+                    </button>
+                </form>
             </div>
             <div class="d-flex justify-content-around w-100 overflow-x-scroll">
-                <div class="day-card text-center day-active">
-                    <div class="day-num text-white">13</div>
-                    <div class="day-str text-white">MON</div>
-                </div>
-                <div class="day-card text-center">
-                    <div class="day-num">14</div>
-                    <div class="day-str">TUE</div>
-                </div>
-                <div class="day-card text-center">
-                    <div class="day-num">15</div>
-                    <div class="day-str">WED</div>
-                </div>
-                <div class="day-card text-center">
-                    <div class="day-num">16</div>
-                    <div class="day-str">THU</div>
-                </div>
-                <div class="day-card text-center">
-                    <div class="day-num">17</div>
-                    <div class="day-str">FRI</div>
-                </div>
+                <a href="/appointments/doctor/{{$doctor->id}}/{{$today->day}}" class="nav-link">
+                    <div class="day-card text-center day-active">
+                        <div class="day-num text-white">{{$today->day}}</div>
+                        <div class="day-str text-white">{{$today->format('D')}}</div>
+                    </div>
+                </a>
+                <a href="/appointments/doctor/{{$doctor->id}}/{{$tomorrow->day}}" class="nav-link">
+                    <div class="day-card text-center">
+                        <div class="day-num">{{$tomorrow->day}}</div>
+                        <div class="day-str">{{$tomorrow->format('D')}}</div>
+                    </div>
+                </a>
+                <a href="/appointments/doctor/{{$doctor->id}}/{{$day_3->day}}" class="nav-link">
+                    <div class="day-card text-center">
+                        <div class="day-num">{{$day_3->day}}</div>
+                        <div class="day-str">{{$day_3->format('D')}}</div>
+                    </div>
+                </a>
+                <a href="/appointments/doctor/{{$doctor->id}}/{{$day_4->day}}" class="nav-link">
+                    <div class="day-card text-center">
+                        <div class="day-num">{{$day_4->day}}</div>
+                        <div class="day-str">{{$day_4->format('D')}}</div>
+                    </div>
+                </a>
+                <a href="/appointments/doctor/{{$doctor->id}}/{{$day_5->day}}" class="nav-link">
+                    <div class="day-card text-center">
+                        <div class="day-num">{{$day_5->day}}</div>
+                        <div class="day-str">{{$day_5->format('D')}}</div>
+                    </div>
+                </a>
             </div>
 
             <h2 class="time mt-5">Available Time</h2>
