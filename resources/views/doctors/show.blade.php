@@ -56,7 +56,7 @@
         </div>
 
         <div class="text-center my-5">
-            <a href="/appointments/doctor/{{$doctor->id}}" class="btn-custom">Book Appointment</a>
+            <a href="/doctor/{{$doctor->id}}/appointments" class="btn-custom">See Availability</a>
         </div>
     </div>
 

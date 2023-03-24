@@ -2,6 +2,13 @@
 
 @section('content')
     <div class="container-fluid py-5 px-2 h-screen">
+        <div class="row">
+            <div class="col-2 offset-1 back-container">
+                <a href="/doctors">
+                    <img src="{{asset('assets/images/left_arrow.png')}}" alt="" class="back my-2">
+                </a>
+            </div>
+        </div>
         <div class="row justify-content-center mx-4">
             <div class="col-6 text-center my-4">
                 <img src="{{asset('assets/images/image1.png')}}" alt="">
