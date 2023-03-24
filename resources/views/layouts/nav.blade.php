@@ -6,13 +6,8 @@
             </a>
         </div>
         <div class="nav-image-container my-auto">
-            <a href="">
+            <a href="/my_appointments">
                 <img src="{{asset('assets/images/Calendar.png')}}" alt="">
-            </a>
-        </div>
-        <div class="nav-image-container my-auto">
-            <a href="">
-                <img src="{{asset('assets/images/Chat.png')}}" alt="">
             </a>
         </div>
         <div class="nav-image-container my-auto">

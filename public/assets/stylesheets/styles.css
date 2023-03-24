@@ -14,6 +14,9 @@
 .text-custom-grey{
     color: #555353;
 }
+.text-custom-blue{
+    color: #51A8FF;
+}
 .h-screen{
     min-height: 100vh;
 }

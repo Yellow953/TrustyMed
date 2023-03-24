@@ -73,4 +73,10 @@ class AppointmentsController extends Controller{
         $appointment->delete();
         return redirect('/doctor/' . $doctor_id . '/appointments')->with('error', 'Appointment cancelled');
     }
+
+    public function my_appointments(){
+        $appointments = Appointment::where('user_id', auth()->user()->id)->get();
+        return view('appointments.my_appointments', compact('appointments'));
+    }
+
 }

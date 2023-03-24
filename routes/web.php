@@ -16,6 +16,7 @@ Route::get('/appointment/{id}/edit', [App\Http\Controllers\AppointmentsControlle
 Route::post('/appointment/{id}/save', [App\Http\Controllers\AppointmentsController::class, 'save']);
 Route::get('/appointment/{id}/delete', [App\Http\Controllers\AppointmentsController::class, 'destroy']);
 Route::get('/doctor/{id}/appointments', [App\Http\Controllers\AppointmentsController::class, 'index']);
+Route::get('/my_appointments', [App\Http\Controllers\AppointmentsController::class, 'my_appointments']);
 
 Route::get('/profile/{id}', [App\Http\Controllers\HomeController::class, 'profile']);
 Route::post('/profile/{id}/save', [App\Http\Controllers\HomeController::class, 'profile_save']);
