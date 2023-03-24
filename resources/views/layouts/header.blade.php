@@ -2,9 +2,11 @@
     <div class="row mt-3 mt-md-1">
         <div class="p-md-1 p-2 p-md-1 p-2">
             <div class="d-flex justify-content-between">
-                <h4 class="welcoming">Hi, {{auth()->user()->name}}</h4>
+                <h4 class="welcoming">Hi, {{auth()->user()->first_name}}</h4>
                 <div class="icon-container">
-                    <img src="{{asset('assets/images/Notification.png')}}" alt="" class="icon">
+                    <a href="/logout">
+                        <img src="{{asset('assets/images/Logout.png')}}" alt="" class="icon">
+                    </a>
                 </div>
             </div>
         </div>
