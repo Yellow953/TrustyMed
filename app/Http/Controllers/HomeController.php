@@ -48,4 +48,5 @@ class HomeController extends Controller{
         Auth::logout();
         return redirect('/')->with('success', 'You have been logged out!');
     }
+    
 }

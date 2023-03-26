@@ -31,12 +31,5 @@ class DoctorsController extends Controller{
         $doctors = Doctor::where('speciality_id', $speciality->id)->paginate(10);
         return view('doctors.index', compact('doctors'));
     }
-
-    // if ($request->hasFile('image')) {
-    //     $file = $request->file('image');
-    //     $ext = $file->getClientOriginalExtension();
-    //     $filename = time() . '.' . $ext;
-    //     $file->move('uploads/profiles/', $filename);
-    //     $user->image = '/uploads/profiles/' . $filename;
-    // }
+    
 }

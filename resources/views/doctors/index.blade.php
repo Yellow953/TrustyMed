@@ -50,8 +50,9 @@
                                         {{$doctor->speciality->name}}
                                     </div>
                                     <div class="rating">
-                                        <img src="{{asset('assets/images/Star.png')}}" alt="" class="star">{{$doctor->rating}}
+                                        <img src="{{asset('assets/images/Star.png')}}" alt="" class="star">{{$doctor->rating}} <small>({{$doctor->consultation_cost}}$)</small>
                                     </div>
+                                    
                                 </div>
                             </div>
                         </div>
