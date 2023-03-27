@@ -27,7 +27,7 @@
                     </button>
                 </form>
             </div>
-            <div class="d-flex justify-content-around w-100 overflow-x-scroll">
+            <div class="d-flex justify-content-around w-100 px-4 overflow-x-scroll">
                 <a href="/doctor/{{$doctor->id}}/appointments/{{$today->day}}" class="nav-link">
                     <div class="day-card text-center day-active">
                         <div class="day-num text-white">{{$today->day}}</div>
@@ -79,7 +79,7 @@
                         }
                     @endphp
                     
-                    <div class="col-3">
+                    <div class="col-4 col-md-3 p-1">
                         <div class="time-card {{ $isTaken ? 'time-taken' : '' }} {{ $isActive ? 'time-active' : '' }}">
                             <div class="time-txt {{ $isActive ? 'text-white' : '' }}">
                                 @if ($isTaken)
