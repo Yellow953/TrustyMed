@@ -4,7 +4,7 @@
     <div class="container-fluid m-0 p-0 h-screen">
         <div class="d-flex justify-content-between p-5">
             <div class="back-container">
-                <a href="/doctor/1">
+                <a href="/doctor/{{$doctor->id}}">
                     <img src="{{asset('assets/images/left_arrow.png')}}" alt="" class="back m-2">
                 </a>
             </div>
