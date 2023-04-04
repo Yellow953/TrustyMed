@@ -68,7 +68,7 @@
                         $isActive = false;
                         $appointmentId = null;
                         
-                        foreach ($doctor->appointments as $appointment) {
+                        foreach ($appointments as $appointment) {
                             if (Str::contains($appointment->date, $today->day) && Str::contains($appointment->time, $t)) {
                                 $isTaken = true;
                                 if ($appointment->user_id == auth()->user()->id) {
