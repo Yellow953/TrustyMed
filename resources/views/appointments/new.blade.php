@@ -21,7 +21,14 @@
                 </div>
                 <br>
                 <div class="col-12 col-lg-6 mx-auto">
-                    <input type="time" class="form-control custom-field" name="time" required>
+                    <select name="time" class="form-control custom-field" required>
+                        <option>Choose time</option>
+                        @foreach ($times as $time)
+                            @if (!in_array($time, $unavailable_times))
+                                <option value="{{$time}}">{{$time}}</option>
+                            @endif
+                        @endforeach
+                    </select>
                 </div>
                 <input type="hidden" value="{{$doctor->id}}" name="doctor_id">
                 <div class="col-12 col-lg-6 mx-auto my-4">

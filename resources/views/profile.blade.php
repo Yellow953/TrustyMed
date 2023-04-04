@@ -43,10 +43,11 @@
                 <div class="col-12 col-lg-6 mx-auto my-4">
                     <input type="text" class="form-control custom-field" name="phone" value="{{$user->phone}}" placeholder="Phone Number" required>
                 </div>
-                <div class="col-12 col-lg-6 mx-auto my-4">
+                <div class="col-12 col-lg-6 mx-auto mt-4 mb-2">
                     <input type="email" class="form-control custom-field" name="email" value="{{$user->email}}" placeholder="Email" required>
                 </div>
-                <div class="col-12 col-lg-6 mx-auto my-4">
+                <div class="col-12 col-lg-6 mx-auto mb-4 mt-2">
+                    <label class="mx-2 text-sm text-muted">Please enter password to change anything</label>
                     <input type="password" class="form-control custom-field" name="password" required>
                 </div>
                 <div class="col-12 col-lg-6 mx-auto my-4">

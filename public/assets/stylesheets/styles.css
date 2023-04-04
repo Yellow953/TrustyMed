@@ -17,6 +17,9 @@
 .text-custom-blue{
     color: #51A8FF;
 }
+.text-sm{
+    font-size: small;
+}
 .h-screen{
     min-height: 100vh;
 }

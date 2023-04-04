@@ -49,7 +49,10 @@ class AppointmentsController extends Controller{
     public function new($id){
         $doctor = Doctor::find($id);
         $payment_types = PaymentType::all();
-        return view('appointments.new', compact('doctor', 'payment_types'));
+        $times = ['09:00:00', '10:00:00', '11:00:00', '12:00:00', '13:00:00', '14:00:00', '15:00:00', '16:00:00', '17:00:00'];
+        $unavailable_times = $doctor->appointments()->pluck('time')->toArray();
+        $data = compact('doctor', 'payment_types', 'times', 'unavailable_times');
+        return view('appointments.new', $data);
     }
 
     public function create(Request $request){

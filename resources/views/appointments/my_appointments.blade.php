@@ -24,7 +24,7 @@
             </div>
             @empty
                 <div class="empty text-center">
-                    No appointments Yet...<br>
+                    No appointments Yet...<br><br><br>
                     <a href="/doctors" class="btn-custom">Get Started</a>
                 </div>
             @endforelse
